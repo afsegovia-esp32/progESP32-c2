@@ -35,15 +35,33 @@ int main(void) {
     printf("\n=== Con signo ===\n");
     /* TODO: declarar int8_t temp_celsius, int32_t altitud_m */
     /* TODO: imprimir con %d y sizeof */
+    int8_t temp_celsius = -15;
+    int32_t altitud_m = -1340;
+
+    printf("Variable temp_celsius: %d \n", temp_celsius);
+    printf("Tamanho de temp_celsius : %zu \n", sizeof(temp_celsius));
+
+    printf("Variable  altitud_m: %d \n", altitud_m);
+    printf("Tamanho de altitud_m : %zu \n", sizeof(altitud_m));
 
     /* --- Punto flotante --- */
     printf("\n=== Flotantes ===\n");
     /* TODO: declarar float voltaje = 3.3f  y  double pi = 3.14159265358979 */
     /* TODO: imprimir voltaje con %.2f y pi con %.14f */
+    float voltaje = 3.3;
+    double pi = 3.14159265358979;
+    printf("Variable voltaje: %.2f \n", voltaje);
+    printf("Tamanho de voltaje : %zu \n", sizeof(voltaje));
+
+    printf("Variable  pi: %.14f \n", pi);
+    printf("Tamanho de pi : %zu \n", sizeof(pi));
 
     /* --- Booleano --- */
     printf("\n=== Booleano ===\n");
     /* TODO: declarar bool sensor_activo = true e imprimir con %d */
+    bool sensor_activo = true;
+    printf("Variable  sensor_activo: %d \n", sensor_activo);
+    printf("Tamanho de sensor_activo : %zu \n", sizeof(sensor_activo));
 
     /* --- Bases numericas --- */
     printf("\n=== Bases numericas ===\n");
