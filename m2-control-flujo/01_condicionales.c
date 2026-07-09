@@ -42,15 +42,51 @@ int main(void) {
     printf("\n=== && y || ===\n");
     float humedad = 75.0f;
     /* TODO: si temperatura>35 Y humedad>70 -> "Activar ventilacion" */
+    if((temperatura > 35) && (humedad > 70))
+    {
+        printf("ACTIVAR VENTILACION \n");
+    }
+    else
+    {
+        printf("VENTILACION APAGADA \n");
+    }
 
     bool bateria_baja = true, sensor_error = false;
     /* TODO: si bateria_baja O sensor_error -> imprimir cual es el problema */
+    if((bateria_baja == true) || (sensor_error == true))
+    {
+        if (bateria_baja)
+        {
+            printf("El problema es la bateria \n");
+        }
+
+        if(sensor_error)
+        {
+            printf("El problema es el sensor \n");
+        }
+    }
 
     /* --- switch --- */
     printf("\n=== switch ===\n");
-    uint8_t estado = 2;
+    uint8_t estado = 1;
     printf("Estado: %u\n", estado);
     /* TODO: switch sobre estado: 0→"APAGADO", 1→"INIT", 2→"ACTIVO", 3→"ERROR", default→"DESCONOCIDO" */
+    switch(estado) {
+        case 0:
+            printf("APAGADO \n");
+            break;
+        case 1:
+            printf("INIT \n");
+            break;
+        case 2:
+            printf("ACTIVO \n");
+            break;
+        case 3:
+            printf("ERROR \n");
+            break;
+        default:
+            printf("DESCONOCIDO \n");
+    }
 
     char modo = 'A';
     /* TODO: switch sobre modo: 'M'→"MANUAL", 'A'→"AUTOMATICO", 'S'→"SLEEP" */
