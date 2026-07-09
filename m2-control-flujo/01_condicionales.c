@@ -16,9 +16,27 @@ int main(void) {
 
     /* --- if / else if / else --- */
     printf("=== if/else ===\n");
-    float temperatura = 38.5f;
+    float temperatura = 43.6f;
     printf("Temperatura: %.1f C\n", temperatura);
     /* TODO: if/else que clasifique: >40→"CRITICO", >35→"ALERTA", >25→"NORMAL", sino→"FRIO" */
+    if (temperatura > 40)
+    {
+        printf("ESTADO : CRITICO \n");  
+    }
+    else if (temperatura > 35)
+    {
+        printf("ESTADO : ALERTA \n");
+    }
+    else if (temperatura > 25)
+    {
+        printf("ESTADO : NORMAL \n");
+    }
+    else
+    {
+        printf("ESTADO : FRIO \n");
+    }
+        
+
 
     /* --- Condiciones compuestas --- */
     printf("\n=== && y || ===\n");
